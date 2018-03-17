@@ -1,1 +1,1 @@
-var dramaList = new dramaList();
+var listDrama1 = new dramaList();
