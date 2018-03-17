@@ -2,6 +2,7 @@ const key = ﻿process.env.TOKEN;
 const Discord = require('discord.js');
 const util = require('util');
 const client = new Discord.Client();
+var maxAnPurpose = 8;
 
 function dramaList() {
 
@@ -98,6 +99,9 @@ function drama(arg1) {
         NameOfvar.add(this.object);
     }
 }
+
+
+require("commands/drama/drama.js").load();
 
 client.on('message', message => {
     if(!message.guild || message.author.bot) return;
