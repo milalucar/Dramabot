@@ -1,25 +1,25 @@
-key = ﻿process.env.TOKEN;
-Discord = require('discord.js');
-util = require('util');
-client = new Discord.Client();
+const key = ﻿process.env.TOKEN;
+const Discord = require('discord.js');
+const util = require('util');
+const client = new Discord.Client();
 
-function animelist() {
+function dramaList() {
 
-    this.add = function(anime) {
+    this.add = function(drama) {
         
-        if (typeof(anime) == "object" && !Array.isArray(anime)) {
-            this.animes.push(anime);
-        } else throw new Error("anime is not an [object Object] at animelist.add(anime)");
+        if (typeof(drama) == "object" && !Array.isArray(drama)) {
+            this.animes.push(drama);
+        } else throw new Error("drama is not an [object Object] at dramaList.add(drama)");
         
     }
-    this.animes = [];
+    this.dramas = [];
 }
 
-function anime(arg1) {
+function drama(arg1) {
     
     if (typeof(arg1) == "object" && !Array.isArray(arg1)) this.object = arg1;
     
-    else if (typeof(arg1) != "string" && arg1 != undefined) throw new Error("name is not a string at anime(name)");
+    else if (typeof(arg1) != "string" && arg1 != undefined) throw new Error("name is not a string at drama(name)");
     
     else this.object = {name:arg1};
     /*name*/
