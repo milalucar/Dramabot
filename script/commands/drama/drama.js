@@ -1,18 +1,18 @@
 var listDrama1 = new dramaList();
 
-var drm = new drama()
-    drm.setName("Test")
-    drm.setImage("https://tse2.mm.bing.net/th?id=OIP.NhJdBlIKL2rNrjnRIh5cqAHaHa&pid=15.1&P=0&w=300&h=300")
-    drm.setStory_fr("Histoire")
-    drm.setStory_fr_source("undefined")
-    drm.setStory_en("Story")
-    drm.setStory_en_source("undefined")
-    drm.setDrama_fr("undefined")
-    drm.setDrama_en("undefined")
-    drm.setOp([])
-    drm.setOpFull([])
-    drm.setEd([])
-    drm.setEdFull([])
+var drm = new drama();
+    drm.setName("Test");
+    drm.setImage("https://tse2.mm.bing.net/th?id=OIP.NhJdBlIKL2rNrjnRIh5cqAHaHa&pid=15.1&P=0&w=300&h=300");
+    drm.setStory_fr("Histoire");
+    drm.setStory_fr_source("undefined");
+    drm.setStory_en("Story");
+    drm.setStory_en_source("undefined");
+    drm.setDrama_fr("undefined");
+    drm.setDrama_en("undefined");
+    drm.setOp([]);
+    drm.setOpFull([]);
+    drm.setEd([]);
+    drm.setEdFull([]);
     drm.addTo(listDrama1);
 
     
