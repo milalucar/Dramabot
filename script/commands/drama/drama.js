@@ -9,10 +9,10 @@ var drm = new drama();
     drm.setStory_en_source("undefined");
     drm.setDrama_fr("undefined");
     drm.setDrama_en("undefined");
-    drm.setOp([]);
-    drm.setOpFull([]);
-    drm.setEd([]);
-    drm.setEdFull([]);
+    drm.setOp(["undefined"]);
+    drm.setOpFull(["undefined"]);
+    drm.setEd(["undefined"]);
+    drm.setEdFull(["undefined"]);
     drm.addTo(listDrama1);
 
     
