@@ -58,16 +58,16 @@ function drama(arg1) {
         this.object.story_en_source = story_en_source;
     }
     
-    /*anime_fr*/
-    this.setanime_fr = function(anime_fr) {
-        if (typeof(anime_fr) != "string") throw new Error("anime_fr is not a string at setanime_fr(anime_fr)")
-        this.object.anime_fr = anime_fr;
+    /*drama_fr*/
+    this.setDrama_fr = function(drama_fr) {
+        if (typeof(drama_fr) != "string") throw new Error("drama_fr is not a string at setDrama_fr(drama_fr)")
+        this.object.drama_fr = drama_fr;
     }
     
-    /*anime_en*/
-    this.setanime_en = function(anime_en) {
-        if (typeof(anime_en) != "string") throw new Error("anime_en is not a string at setanime_en(anime_en)")
-        this.object.anime_en = anime_en;
+    /*drama_en*/
+    this.setDrama_en = function(drama_en) {
+        if (typeof(drama_en) != "string") throw new Error("drama_en is not a string at setDrama_en(drama_en)")
+        this.object.drama_en = drama_en;
     }
     
     /*op*/
