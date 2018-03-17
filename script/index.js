@@ -105,7 +105,7 @@ function drama(arg1) {
 }
 
 
-require("commands/drama/drama.js").load();
+require("./commands/drama/drama.js").load();
 
 client.on('message', message => {
     if(!message.guild || message.author.bot) return;
