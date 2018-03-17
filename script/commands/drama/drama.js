@@ -1,0 +1,1 @@
+var dramaList = new dramaList();
