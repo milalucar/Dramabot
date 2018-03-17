@@ -23,10 +23,13 @@ exports.execute = () => {
         }
         if (drama.story_fr_source != `undefined`)
             var story_fr = `${drama.story_fr}\n\n[Source: ${drama.story_fr_source[0]}](${drama.story_fr_source[1]})`;
-        
+        else 
+            var story_fr = drama.story_fr;
+       
         if (drama.story_en_source != `undefined`)
             var story_en = `${drama.story_en}\n\n[Source: ${drama.story_en_source[0]}](${drama.story_en_source[1]})`;
-        
+        else
+           var story_en = drama.story_en;
         
         var embedfr = new Discord.RichEmbed()
             .setTitle(drama.name)
@@ -206,11 +209,15 @@ exports.execute = () => {
                         }
                         
                         if (drama.story_fr_source != `undefined`)
-                            var story_fr = `${drama.story_fr}\n\n[Source: ${drama.story_fr_source[0]}](${drama.story_fr_source[1]})`;
-                        
+                           var story_fr = `${drama.story_fr}\n\n[Source: ${drama.story_fr_source[0]}](${drama.story_fr_source[1]})`;
+                        else 
+                           var story_fr = drama.story_fr;
+       
                         if (drama.story_en_source != `undefined`)
-                            var story_en = `${drama.story_en}\n\n[Source: ${drama.story_en_source[0]}](${drama.story_en_source[1]})`;
-                        
+                           var story_en = `${drama.story_en}\n\n[Source: ${drama.story_en_source[0]}](${drama.story_en_source[1]})`;
+                        else
+                           var story_en = drama.story_en; 
+                       
                         var embedfr = new Discord.RichEmbed()
                             .setTitle(drama.name)
                             .setThumbnail(drama.image)
@@ -338,10 +345,14 @@ exports.execute = () => {
             }
             
             if (drama.story_fr_source != `undefined`)
-                var story_fr = `${drama.story_fr}\n\n[Source: ${drama.story_fr_source[0]}](${drama.story_fr_source[1]})`;
-                
+               var story_fr = `${drama.story_fr}\n\n[Source: ${drama.story_fr_source[0]}](${drama.story_fr_source[1]})`;
+            else 
+               var story_fr = drama.story_fr;
+       
             if (drama.story_en_source != `undefined`)
-                var story_en = `${drama.story_en}\n\n[Source: ${drama.story_en_source[0]}](${drama.story_en_source[1]})`;
+               var story_en = `${drama.story_en}\n\n[Source: ${drama.story_en_source[0]}](${drama.story_en_source[1]})`;
+            else
+               var story_en = drama.story_en;
             
             var embedfr = new Discord.RichEmbed()
                 .setTitle(drama.name)
