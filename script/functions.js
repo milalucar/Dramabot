@@ -37,7 +37,7 @@ function drama1(arg1) {
     
     /*story_fr_source*/
     this.setStory_fr_source = function(story_fr_source) {
-        if ( !Array.isArray(story_fr_source)) throw new Error("story_fr_source is not an array at setStory_fr_source(story_fr_source)")
+        if ( !Array.isArray(story_fr_source) && story_fr_source != "undefined") throw new Error("story_fr_source is not an array at setStory_fr_source(story_fr_source)")
         this.object.story_fr_source = story_fr_source;
     }
     
@@ -49,7 +49,7 @@ function drama1(arg1) {
     
     /*story_en_source*/
     this.setStory_en_source = function(story_en_source) {
-        if ( !Array.isArray(story_en_source)) throw new Error("story_en_source is not an array at setStory_en_source(story_en_source)")
+        if ( !Array.isArray(story_en_source)  && story_en_source != "undefined") throw new Error("story_en_source is not an array at setStory_en_source(story_en_source)")
         this.object.story_en_source = story_en_source;
     }
     
