@@ -94,6 +94,74 @@ function drama1(arg1) {
     }
 }
 
+
+const clean1 = text => {
+                if (typeof(text) === "string")
+                    return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+                else
+                    return text;
+            }
+            /**/
+            
+            
+            /**/
+             function fulllog1(FuncArgument1, max) {
+    			if (max == undefined) {max = 1000}
+                let i = 0;
+                var popout = new Array();
+                
+                if (FuncArgument1.length <= max) {
+                    popout[0] = FuncArgument1;
+                }
+                else
+                while (FuncArgument1.length > max && i < 100) {
+                    popout[i] = FuncArgument1.slice(0,4);
+                    
+					
+					if (popout[i].lastIndexOf(" ") != -1) 
+                    	popout[i] = popout[i].slice(0,popout[i].lastIndexOf(" ") + 1);
+                        
+                    else if (popout[i].lastIndexOf(";") != -1) 
+                    	popout[i] = popout[i].slice(0,popout[i].lastIndexOf(";") + 1);
+                        
+					else if (popout[i].lastIndexOf(",") != -1) 
+                    	popout[i] = popout[i].slice(0,popout[i].lastIndexOf(",") + 1);
+                    else {
+                    
+                    	popout[i] = FuncArgument1.slice(0,10 + max);
+                    
+					
+						if (popout[i].lastIndexOf(" ") != -1) 
+                    		popout[i] = popout[i].slice(0,popout[i].lastIndexOf(" ") + 1);
+                        
+                    	else if (popout[i].lastIndexOf(";") != -1) 
+                    		popout[i] = popout[i].slice(0,popout[i].lastIndexOf(";") + 1);
+                        
+						else if (popout[i].lastIndexOf(",") != -1) 
+                    		popout[i] = popout[i].slice(0,popout[i].lastIndexOf(",") + 1);
+                    
+                    }
+                    
+                    
+                    FuncArgument1 = FuncArgument1.slice(popout[i].length);
+                    if (FuncArgument1.length != 0) 
+	                    popout[i + 1] = FuncArgument1;
+                    
+                    i += 1;
+                };
+                var i2 = 0;
+                while (i2 < 20) {
+                    popout.forEach( m => {
+                        if (m.length == 0 || m.replace(/ +/g,"").length == 0)
+    		                popout.splice(popout.indexOf(m), 1);
+                    });
+                    i2 += 1;
+                }
+                return popout;
+            }
+            /**/
+
+
 exports.load = () => {
-  return dramaList = dramaList1, drama = drama1;
+  return dramaList = dramaList1, drama = drama1, clean = clean1, fulllog = fulllog1;
 }
