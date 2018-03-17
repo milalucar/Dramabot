@@ -3,6 +3,10 @@ const Discord = require('discord.js');
 const util = require('util');
 const client = new Discord.Client();
 var maxAnPurpose = 8;
+const mention = "424575054261518336";
+const prefix = 'drama:';
+const botowner = "<@352928224897925122>"
+const invite = "https://discordapp.com/api/oauth2/authorize?client_id=424575054261518336&permissions=67628096&redirect_uri=https%3A%2F%2Fdiscordapp.com&scope=bot";
 
 function dramaList() {
 
