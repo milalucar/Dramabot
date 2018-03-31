@@ -116,6 +116,37 @@ Kim Ro Woon (Ro Woon) is the star baseball pitcher. Kim Da Won (Da Won) is the s
     .setEd(["undefined"])
     .setEdFull(["undefined"])
     .addTo(listDrama1);
+  
+    new drama()
+    .setName("school 2017")
+    .setImage("https://www.nautiljon.com/images/drama/00/72/school_2017_2527.jpg")
+    .setStory_fr(`Comment un groupe de lycéens peut-il survivre dans un système éducatif qui fait passer leur position au classement avant tout le reste ? Et si ce mystérieux X pouvait tout changer ?
+
+ 
+
+Ra Eun Ho (Kim Sejeong) travaille très dur pour se maintenir au rang de sixième dans sa classe et avoir l'opportunité d'intégrer la même université que ce garçon qui lui plaît. C'est une dessinatrice de bande dessinée en ligne au talent certain et à l'avenir prometteur, mais tout ça change lorsqu'on l'accuse d'être le mystérieux X !
+
+ 
+
+Hyeon Tae Woon (Kim Jung Hyun) est un jeune homme rebelle qui est transféré au lycée après s'être fait expulser de cleui où il étudiait aux États-Unis. Le père fortuné de Tae Woon est un des actionnaires du lycée, à cause de ça, son fils se comporte comme si les règles ne s'appliquaient pas à lui.
+
+ 
+
+Song Dae Hwi (Jang Dong Yoon) a tout ce qu'il faut pour réussir. Il a un beau physique, de bonnes notes et une bonne attitude : il essaye de venir en aide aux étudiants plus faibles qui sont la cible d'intimidations. Malheureusement, il souffre car sa mère l'empêche de vivre tranquillement ses rêves...
+
+ 
+
+« Année Scolaire 2017 » est un série dramatique sud-coréenne, réalisée par Park Jin Suk. C'est la septième saison de la série populaire School, suivant « Année Scolaire 1 » (1999), « Année Scolaire 2 » (1999-2000), « Année Scolaire 3 » (2000-2001), « Année Scolaire 4 » (2001-2002), « Année Scolaire 2013 » (2012-2013), et « Qui es-tu : Année Scolaire 2015 » (2015).`)
+    .setStory_fr_source("undefined")
+    .setStory_en("Story")
+    .setStory_en_source("undefined")
+    .setDrama_fr("undefined")
+    .setDrama_en("undefined")
+    .setOp(["undefined"])
+    .setOpFull(["undefined"])
+    .setEd(["undefined"])
+    .setEdFull(["undefined"])
+    .addTo(listDrama1);
              
 exports.load = () => {
     return listDrama = listDrama1.dramas
