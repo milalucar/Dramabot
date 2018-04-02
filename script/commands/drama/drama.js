@@ -137,8 +137,8 @@ Song Dae Hwi (Jang Dong Yoon) a tout ce qu'il faut pour réussir. Il a un beau p
  
 
 « Année Scolaire 2017 » est un série dramatique sud-coréenne, réalisée par Park Jin Suk. C'est la septième saison de la série populaire School, suivant « Année Scolaire 1 » (1999), « Année Scolaire 2 » (1999-2000), « Année Scolaire 3 » (2000-2001), « Année Scolaire 4 » (2001-2002), « Année Scolaire 2013 » (2012-2013), et « Qui es-tu : Année Scolaire 2015 » (2015).`)
-    .setStory_fr_source("undefined")
-    .setStory_en("Story")
+    .setStory_fr_source(["Viki","https://www.viki.com/tv/35518c-school-2017?content_lang=fr"])
+    .setStory_en(["Viki","https://www.viki.com/tv/35518c-school-2017?content_lang=en"])
     .setStory_en_source("undefined")
     .setDrama_fr("undefined")
     .setDrama_en("undefined")
